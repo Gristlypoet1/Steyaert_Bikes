@@ -1,0 +1,43 @@
+/* ========== HOME PAGINA STIJL ========= */
+
+/* ========== TABELLEN ========== */
+.week-opening {
+    background: var(--secondary-color);
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+}
+
+.week-opening h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+.openingstabel {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.openingstabel td {
+    padding: 0.75em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.openingstabel td:first-child {
+    width: 60%;
+    text-align: left;
+}
+
+.openingstabel td:last-child {
+    width: 40%;
+    text-align: right;
+}
+
+.openingstabel tr:last-child td {
+    border-bottom: none;
+}

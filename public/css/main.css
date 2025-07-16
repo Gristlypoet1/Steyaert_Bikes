@@ -1,0 +1,112 @@
+/* ========== ROOT VARIABELEN ========== */
+:root {
+    --primary-color: #d4d1cd;         /* Donkerder warmgrijs voor header/footer */
+    --secondary-color: #f0ebe7;       /* Zachte beige body achtergrond */
+    --header-color: var(--primary-color);
+    --footer-color: var(--primary-color);
+    --button-color: #3b3b3b;          /* Donkergrijs (bijna zwart) voor knoppen */
+    --button-text-color: #ffffff;     /* Wit op knoppen */
+    --text-color: #1f1f1f;            /* Bijna zwart voor goede leesbaarheid */
+    --link-color: #4a4a4a;            /* Donkergrijs voor links */
+    --hover-color: #6a6a6a;           /* Lichter grijs voor hovereffecten */
+}
+
+/* ========== ALGEMENE STYLING ========== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    background: var(--secondary-color);
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 700px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* ========== STRUCTUUR: HEADER & FOOTER ========== */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    min-height: 50px;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+/* ========== NAVIGATIE ========== */
+
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav a {
+    color: var(--button-text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+nav button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    max-height: max-content;
+    max-width: max-content;
+}
+
+nav button:hover {
+    background-color: var(--hover-color);
+}
+
+/* ========== LOGO STYLING ========== */
+.header_logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header_logo img {
+    height: 150px;
+    width: auto;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header h1,
+.header p {
+    margin: 0;
+}

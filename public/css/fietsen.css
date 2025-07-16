@@ -1,0 +1,49 @@
+/* ========== BICYCLE ========== */
+.all_brands_bicycles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 0 40px;
+    width: 100%;
+    margin: auto;
+}
+
+.brand_bicycle {
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand_bicycle:hover {
+    transform: translateY(-5px);
+}
+
+.logo_bicycle {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.logo_bicycle img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.brand_bicycle h6 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0;
+}
